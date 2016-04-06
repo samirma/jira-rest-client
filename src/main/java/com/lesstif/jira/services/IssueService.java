@@ -212,6 +212,10 @@ public class IssueService {
             
         }
         
+        return postWorklog(worklog, issueId);
+    }
+
+    public WorklogElement postWorklog(final WorklogElement worklog, String issueId) throws UniformInterfaceException, ClientHandlerException, IOException {
         ObjectMapper mapper = new ObjectMapper();
        
         //to ignore a field if its value is null
@@ -264,4 +268,5 @@ public class IssueService {
 
         return issues;
     }
+    
 }
