@@ -13,7 +13,7 @@ public class ProjectTest {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
 	
-	@Test
+	//@Test
 	public void listProject() throws IOException, ConfigurationException {
 		ProjectService prjService = new ProjectService();
 		
@@ -25,7 +25,7 @@ public class ProjectTest {
 		}
 	}	
 	
-	@Test
+	//@Test
 	public void getProject() throws IOException, ConfigurationException {
 		ProjectService prjService = new ProjectService();
 		

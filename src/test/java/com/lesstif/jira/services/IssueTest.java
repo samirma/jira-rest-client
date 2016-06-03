@@ -31,7 +31,7 @@ public class IssueTest {
         HttpConnectionUtil.disableSslVerification();
     }
 
-    @Test
+    //@Test
     public void getIssue() throws IOException, ConfigurationException {
         String issueKey = "TEST-92";
 
@@ -58,7 +58,7 @@ public class IssueTest {
         logger.debug("Issue Description:" + fields.getDescription());
     }
 
-    @Test
+    //@Test
     public void createIssue() throws IOException, ConfigurationException {
 
         Issue issue = new Issue();
@@ -94,7 +94,7 @@ public class IssueTest {
         logger.info(genIssue.toPrettyJsonString());
     }
 
-    @Test
+    //@Test
     public void uploadAttachments() throws IOException, ConfigurationException {
         Issue issue = new Issue();
 
@@ -118,7 +118,7 @@ public class IssueTest {
         }
     }
 
-    @Test
+    //@Test
     public void getAllPriorities() throws IOException, ConfigurationException {
 
         IssueService issueService = new IssueService();
@@ -129,7 +129,7 @@ public class IssueTest {
         }
     }
 
-    @Test
+    //@Test
     public void getCustomeFields() throws IOException, ConfigurationException {
         IssueService issueService = new IssueService();
         Issue issue = issueService.getIssue("TEST-92");
