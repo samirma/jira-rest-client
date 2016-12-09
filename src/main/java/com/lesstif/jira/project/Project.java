@@ -36,7 +36,7 @@ public class Project extends JsonPrettyString{
 	private DateTime startDate;
 	
 	private Lead lead;
-	
+        
 	private AvatarUrl avatarUrls; 
 	private ProjectCategory projectCategory;
 	

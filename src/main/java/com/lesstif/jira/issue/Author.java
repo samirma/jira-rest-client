@@ -5,8 +5,7 @@ import lombok.Data;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @Data
-@JsonIgnoreProperties({"avatarUrls"
-})
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Author extends JsonPrettyString {
 	@org.codehaus.jackson.annotate.JsonProperty("emailAddress")
 	private java.lang.String emailaddress;

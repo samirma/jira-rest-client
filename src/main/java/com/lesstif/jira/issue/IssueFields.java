@@ -37,7 +37,6 @@ public class IssueFields {
 
     private Reporter reporter;
 
-    private DateTime created;
     private DateTime updated;
 
     private String description;

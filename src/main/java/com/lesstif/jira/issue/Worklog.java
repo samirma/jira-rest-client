@@ -2,8 +2,10 @@ package com.lesstif.jira.issue;
 
 import com.lesstif.jira.JsonPrettyString;
 import lombok.Data;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Worklog extends JsonPrettyString {
 	@org.codehaus.jackson.annotate.JsonProperty("startAt")
 	private java.lang.Integer startat;

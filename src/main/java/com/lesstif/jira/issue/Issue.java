@@ -9,10 +9,10 @@ import lombok.Data;
 
 @Data
 public class Issue extends JsonPrettyString{
-	private String expand;
-	private String id;
-	private String self;
-	private String key;
+	public String expand;
+	public String id;
+	public String self;
+	public String key;
 	
 	private IssueFields fields = new IssueFields();
 

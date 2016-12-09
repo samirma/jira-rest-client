@@ -13,9 +13,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import lombok.Data;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
 
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class WorklogElement extends JsonPrettyString implements Comparable<WorklogElement> {
 
     private static final String TAG = WorklogElement.class.getName();
